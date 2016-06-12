@@ -1,0 +1,94 @@
+﻿<Window x:Class="Flashcards_Project.windows.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flashcards_Project.windows"
+        mc:Ignorable="d"
+        Title="Flashcards" Height="350" Width="525"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Label Name="NotificationLabel"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+               Grid.Row="1"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+               FontSize="28" />
+
+        <Viewbox Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Grid.Row="2"
+                 StretchDirection="DownOnly"
+                 Stretch="Uniform">
+
+            <ContentControl Name="FlashcardLabel"
+                            FontSize="72" />
+        </Viewbox>
+
+        <Label Name="CardsLabel"
+               Grid.Column="3"
+               Grid.ColumnSpan="2"
+               Grid.Row="1"
+               VerticalContentAlignment="Bottom"
+               FontSize="18" />
+
+        <Label Name="LivesLabel"
+               Grid.Column="3"
+               Grid.ColumnSpan="2"
+               Grid.Row="2"
+               FontSize="18" />
+
+        <TextBox Name="Answerbox"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Grid.Row="3"
+                 FontSize="22"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center" />
+
+        <Button Name="AnswerButton"
+                Grid.Column="1"
+                Grid.Row="4"
+                Content="Action"
+                Click="AnswerButton_Click"
+                IsDefault="True" />
+
+        <Button Name="GiveUpButton"
+                Grid.Column="2"
+                Grid.Row="4"
+                Content="Give up" Click="GiveUpButton_Click" />
+
+        <Button Name="ExitButton"
+                Grid.Column="3"
+                Grid.Row="4"
+                Content="X"
+                Background="Tomato"
+                Foreground="DarkRed" HorizontalAlignment="Left" Width="32" Click="ExitButton_Click" />
+
+        <Button Name="WtfButton"
+                Grid.Column="3"
+                Grid.Row="3"
+                Content="?"
+                Background="DodgerBlue"
+                Foreground="MidnightBlue" Height="32" VerticalAlignment="Top" Click="WtfButton_Click" />
+
+    </Grid>
+</Window>

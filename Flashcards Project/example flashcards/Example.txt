@@ -1,0 +1,46 @@
+Properties
+Właściwości
+Apple
+Jabłko
+Chair
+Krzesło
+Bread
+Chleb
+Lamp
+Lampa
+Clean
+Czysty
+Black
+Czarny
+France
+Francja
+Sausage
+Kiełbasa
+Fire
+Ogień
+Soup
+Zupa
+Lake
+Jezioro
+Mouse
+Myszka
+Keyboard
+Klawiatura
+Peach
+Brzoskwinia
+Wallet
+Portfel
+Flashlight
+Latarka
+World
+Świat
+Football
+Piłka nożna
+United States of America
+Stany Zjednoczone
+Knife
+Nóż
+Wheel
+Koło
+Car
+Samochód
