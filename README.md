@@ -7,7 +7,7 @@ There are 2 types of learning:
 After each test result is shown.
 Flashcards are loaded from .txt in simple format:
 
-Front text of flascard no. 1
+Front text of flascard no. 1 \n
 Back text of flashcard no. 1
 .
 .
